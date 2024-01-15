@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Car Launch</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/car-logo.png" class="logo" alt="">
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#variations">Variations</a>
+                <a href="#specials">Specials</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="home" class="hero">
+
+        <div class="text animate__animated animate__zoomIn animate__delay-0.55s">
+            <h4>Experience the All-New</h4>
+            <h1><span>Revolutionary</span> Car</h1>
+            <p>Discover the power, performance, and style like never before.</p>
+            <a href="#contact" class="btn">Book a Test Drive</a>
+        </div>
+    </div>
+
+    <section id="features" class="features">
+       
+        <h2>Key Features</h2>
+        <ul>
+            <li>Powerful Engine</li>
+            <li>Advanced Safety Features</li>
+            <li>Futuristic Design</li>
+            <li>Smart Technology Integration</li>
+        </ul>
+        
+    </section>
+
+    <section id="variations" class="variations">
+        
+        <h2>Variations</h2>
+        <div class="variation-card">
+            <img src="img/car1.png" alt="Car Variation 1">
+            <img src="img/car2.png" alt="Car Variation 2">
+        </div>
+       
+           
+        
+    </section>
+    
+
+    <section id="specials" class="specials">
+        
+        
+        <h2>Specials</h2>
+        <p>Take advantage of our limited-time offers and exclusive deals.</p>
+        <a href="#contact" class="btn">Explore Specials</a>
+        
+        
+        
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>For inquiries or to schedule a test drive, contact us below:</p>
+            <div class="contact-form">
+                +91xxxxxxxxxx
+            </div>
+        </div>
+    
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="social-links">
+            <h3>Social</h3>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="img/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    
+        <div class="copyright">
+            <p>&copy; 2024 Wheels Motors. All Rights Reserved</p>
+        </div>
+    </section>
+
+    <script>
+        
+        let heroBg = document.querySelector('.hero');
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(img/bg-light.jpg)"
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(img/bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>

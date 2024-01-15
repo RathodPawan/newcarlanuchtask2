@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+nav .menu a{
+    color: #fff;
+    margin-left: 30px;
+    position: relative;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+}
+nav .social a i{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+nav .social a i:hover{
+    transform: scale(1.3);
+    color: #dd0707;
+}
+
+
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .text{
+    width: 90%;
+    margin: auto;
+}
+.hero .text h4{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.hero .text h1{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.hero .text h1 span{
+    color: #dd0707;
+    font-size: 80px;
+    font-weight: bold;
+}
+.hero .text p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.hero .text .btn{
+    padding: 10px 30px;
+    background-color: #dd0707;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #dd0707;
+    transition: 0.3s;
+}
+.hero .text .btn:hover{
+    background-color: transparent;
+}
+.features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features ul {
+    list-style: none;
+    text-align: center;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+
+.variations {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.variations h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.variation-card {
+    text-align: center;
+    margin: 20px;
+}
+
+.variation-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.specials {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.specials h2 {
+    margin-bottom: 40px;
+}
+
+.specials p {
+    margin-bottom: 30px;
+}
+
+
+.contact {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .menu {
+        margin-top: 10px;
+    }
+
+    nav .menu a {
+        margin: 10px 0;
+    }
+
+    header nav .logo {
+        margin-top: 10px;
+    }
+}
+
+.contact {
+    background-color: #000; 
+    color: #fff; 
+    padding: 80px 0;
+    text-align: center;
+}
+
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.quick-links,
+.social-links,
+.copyright {
+    margin-top: 40px;
+}
+
+.quick-links h3,
+.social-links h3 {
+    margin-bottom: 20px;
+}
+
+.quick-links ul,
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links a,
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.quick-links a:hover,
+.social-links a:hover {
+    color: #dd0707;
+}
+
+.copyright p {
+    color: #777;
+    font-size: 14px;
+}
+.social-links img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+
+
+
+.features {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features li {
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 200px; 
+}
+
+.features li:hover {
+    transform: scale(1.05);
+}
+
+.features li::before {
+    content: "\2022"; 
+    color: #dd0707;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.features li span {
+    transition: color 0.3s ease-in-out;
+}
+
+.features li:hover span {
+    color: #dd0707; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .features li {
+        flex-basis: 100%;
+    }
+}
+
+.specials {
+    padding: 80px 0;
+    background-color: #dd0707; 
+    text-align: center;
+    color: #fff; 
+}
+
+.specials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.specials p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.specials .btn {
+    padding: 15px 30px;
+    background-color: #fff; 
+    color: #dd0707; 
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.specials .btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .specials .btn {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+
+
+
+.variations {
+    padding: 80px 0;
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+}
+
+.variations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.variation-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.variation-card img {
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s;
+}
+
+.variation-card img:hover {
+    transform: scale(1.1); 
+}
+
+
+@media screen and (max-width: 768px) {
+    .variation-card img {
+        max-width: 100%; 
+    }
+}
+
